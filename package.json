@@ -18,8 +18,14 @@
   },
   "license": "MIT",
   "author": "Sheikh Haris Zahid",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
