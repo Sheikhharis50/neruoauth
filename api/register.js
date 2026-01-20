@@ -1,26 +1,26 @@
 import { IDENTITY_SERVER_URL } from "../config/constants";
 
 export const register = async ({
-    loginHash, 
-    publicKey, 
-    encryptedPrivateKey, 
-    encryptedPrivateKeyIV, 
-    encryptedPrivateKeyTag, 
+    loginHash,
+    publicKey,
+    encryptedPrivateKey,
+    encryptedPrivateKeyIV,
+    encryptedPrivateKeyTag,
     encSalt
 }) => {
     try {
-        const res = await fetch(`${IDENTITY_SERVER_URL}/api/auth/register/`, {
+        const res = await fetch(`${IDENTITY_SERVER_URL}/auth/register/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ 
-                pass_phrase: loginHash, 
-                public_key: publicKey, 
-                encrypted_private_key: encryptedPrivateKey, 
-                encrypted_private_key_iv: encryptedPrivateKeyIV, 
-                encrypted_private_key_tag: encryptedPrivateKeyTag, 
-                enc_salt: encSalt 
+            body: JSON.stringify({
+                pass_phrase: loginHash,
+                public_key: publicKey,
+                encrypted_private_key: encryptedPrivateKey,
+                encrypted_private_key_iv: encryptedPrivateKeyIV,
+                encrypted_private_key_tag: encryptedPrivateKeyTag,
+                enc_salt: encSalt
             })
         });
 
