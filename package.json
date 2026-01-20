@@ -5,13 +5,13 @@
   "keywords": [
     "seed"
   ],
-  "homepage": "https://github.com/Sheikhharis50/neruoauth#readme",
+  "homepage": "https://github.com/Sheikhharis50/neuroauth#readme",
   "bugs": {
-    "url": "https://github.com/Sheikhharis50/neruoauth/issues"
+    "url": "https://github.com/Sheikhharis50/neuroauth/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sheikhharis50/neruoauth.git"
+    "url": "git+https://github.com/Sheikhharis50/neuroauth.git"
   },
   "publishConfig": {
     "access": "public"
